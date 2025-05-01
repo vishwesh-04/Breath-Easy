@@ -9,7 +9,7 @@ export const analyzeBreathingAudio = async (audioBlob: Blob): Promise<AnalysisRe
     formData.append('file', audioBlob, 'recording.wav');
     
     // Call the local API endpoint
-    const response = await fetch('http://localhost:5000/analyze', {
+    const response = await fetch('http://localhost:4567/analyze', {
       method: 'POST',
       body: formData
     });
