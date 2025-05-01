@@ -147,20 +147,6 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({ onAudioCaptured }) => {
       </div>
 
       <div className="flex gap-4 mt-2">
-        {/* {!isRecording && !isLoading ? (
-          <Button onClick={startRecording} className="bg-health-600 hover:bg-health-700">
-            <Mic className="mr-2 h-4 w-4" /> Record Audio
-          </Button>
-        ) : isRecording ? (
-          <Button onClick={stopRecording} variant="destructive">
-            <Square className="mr-2 h-4 w-4" /> Stop Recording
-          </Button>
-        ) : (
-          <Button disabled>
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Processing...
-          </Button>
-        )} */}
-        
         <Button onClick={handleUpload} variant="outline" className="border-health-600 text-health-700">
           <Upload className="mr-2 h-4 w-4" /> Upload Audio
         </Button>
